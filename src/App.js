@@ -21,7 +21,7 @@ const App = () => {
       setMovies(res.data.Search);
       setLoading(false);
     } catch (err) {
-      alert('Movie is unavailiable please check search')
+      alert('3rd party API issue occured')
     }
   }
 
