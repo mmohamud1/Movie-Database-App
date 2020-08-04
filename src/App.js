@@ -56,7 +56,7 @@ const App = () => {
           <Switch>
             <Route exact path='/' render={(props) => <Home searchMovies={searchMovies} movies={movies} loading={loading} clearSearch={clearSearch} getMovie={getMovie} />} />
             <Route exact path='/about' component={About} />
-            <Route exact path='/movie/:id' render={(props) => <Movie  movieInfo={movieInfo} />} />
+            <Route exact path='/movie/:id' render={(props) => <Movie  movieInfo={movieInfo} loading={loading} />} />
           </Switch>       
         </div>
       </div>

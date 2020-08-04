@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Spinner from './Spinner'
 
-const Movie = ({ movieInfo }) => {
+const Movie = ({ movieInfo, loading }) => {
     //console.log(movieInfo);
+
+    if (loading) return <Spinner />;
     return (
         <div>
             <Link to='/' className='btn btn-danger'>
