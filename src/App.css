@@ -335,6 +335,11 @@ button {
     margin-right: 0.6rem;
 }
 
+.navbar-title {
+    margin-left: 70px;
+    text-transform: uppercase;
+}
+
 .navbar-img {
     width: 40px;
     height: 40px;
