@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Search = ({ searchMovies }) => {
+const Search = ({ searchMovies, clearSearch, movies }) => {
     const [text, setText] = useState('');
 
     const onSubmit = e => {
@@ -21,7 +21,11 @@ const Search = ({ searchMovies }) => {
                 <input  type="text" name="text" placeholder="  Search Movies..." value={text} onChange={onChange}/>
                 <input type="submit" value="search" className="btn btn-dark btn-block"/>
             </form>
-            
+            {movies.length > 0 && (
+              <button className='btn btn-danger btn-block' onClick={clearSearch}>
+                Cear
+              </button>
+            )}
         </div>
     )
 }
