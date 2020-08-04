@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'
-import Home from './components/Pages/Home'
-import About from './components/Pages/About'
+import Home from './Pages/Home'
+import About from './Pages/About'
 import axios from 'axios'
 import './App.css'
 
