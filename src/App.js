@@ -42,7 +42,7 @@ const App = () => {
       console.log(res.data);
       setMovieInfo(res.data);
       setLoading(false);
-    }catch (err) {
+    } catch (err) {
       alert('3rd party API issue occured')
     }
   };
