@@ -49,6 +49,24 @@ img {
     padding: 0 2rem;
 }
 
+.x-large {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.large {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.medium {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
 .text-center {
     text-align: center;
 }
@@ -71,76 +89,34 @@ img {
     text-decoration: underline;
 }
 
-.list {
-    margin: 0.5rem 0;
-}
-
-.list li {
-    padding-bottom: 0.3rem;
-}
-
-.p {
-    padding: 0.5rem;
-}
-
-.p-1 {
-    padding: 1rem;
-}
-
-.p-2 {
-    padding: 2rem;
-}
-
-.p-3 {
-    padding: 3rem;
-}
-
-.py {
-    padding: 0.5rem 0;
-}
-
-.py-1 {
-    padding: 1rem 0;
-}
-
-.py-2 {
-    padding: 2rem 0;
-}
-
 .py-3 {
     padding: 3rem 0;
-}
-
-.m {
-    margin: 0.5rem;
-}
-
-.m-1 {
-    margin: 1rem;
-}
-
-.m-2 {
-    margin: 2rem;
-}
-
-.m-3 {
-    margin: 3rem;
-}
-
-.my {
-    margin: 0.5rem 0;
 }
 
 .my-1 {
     margin: 1rem 0;
 }
 
-.my-2 {
-    margin: 2rem 0;
-}
-
 .my-3 {
     margin: 3rem 0;
+}
+
+.mb {
+    margin-bottom: 0.75rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mt-2 {
+    margin-top: 3rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
 }
 
 .grid-3 {
@@ -184,7 +160,7 @@ img {
   
 .badge {
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     padding: 0.2rem 0.7rem;
     text-align: center;
     margin: 0.3rem;
@@ -192,16 +168,7 @@ img {
     color: #333;
     border-radius: 5px;
 }
-  
-.alert {
-    padding: 0.7rem;
-    margin: 1rem 0;
-    opacity: 0.9;
-    background: var(--light-color);
-    color: #333;
-}
 
-  
 .btn-primary,
 .bg-primary,
 .badge-primary,
@@ -298,6 +265,12 @@ button {
     font: inherit;
 }
 
+input:focus,
+button:focus {
+    outline: none;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -348,7 +321,7 @@ button {
     font-size: 25px;
     text-align: center;
     padding-bottom: 10px;
-    margin-top: 180px;
+    margin-top: 130px;
     margin-bottom: 5px;
 }
   
@@ -391,6 +364,12 @@ button {
     padding-bottom: 10px;
 }
 
+.bg-container {
+    padding: 1rem;
+    border: #ccc 1px dotted;
+    margin: 0.7rem 0;
+  }
+
 @media (max-width: 700px) {
     .hide-sm {
       display: none;
@@ -404,11 +383,15 @@ button {
   
     
     .x-large {
-      font-size: 3rem;
+      font-size: 2rem;
     }
   
     .large {
-      font-size: 2rem;
+      font-size: 1.6rem;
+    }
+
+    .medium {
+        font-size: 1.3rem;
     }
   
     .lead {
@@ -425,4 +408,3 @@ button {
       justify-content: center;
     }
 }
-  

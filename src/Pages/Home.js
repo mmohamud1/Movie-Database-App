@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import Search from '../components/Search'
-import Movies from '../components/Movies'
+import Search from '../components/Search';
+import Movies from '../components/Movies';
 
 const Home = ({ searchMovies, clearSearch, movies, loading, getMovie  }) => (
     <Fragment>

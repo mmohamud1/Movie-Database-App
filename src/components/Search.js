@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 const Search = ({ searchMovies, clearSearch, movies }) => {
     const [text, setText] = useState('');
@@ -27,7 +27,7 @@ const Search = ({ searchMovies, clearSearch, movies }) => {
               </button>
             )}
         </div>
-    )
-}
+    );
+};
 
-export default Search
+export default Search;

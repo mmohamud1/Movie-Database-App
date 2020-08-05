@@ -1,6 +1,6 @@
-import React from 'react'
-import Spinner from './Spinner'
-import MovieItem from './MovieItem'
+import React from 'react';
+import Spinner from './Spinner';
+import MovieItem from './MovieItem';
 
 const Movies = ({ movies, loading, getMovie }) => {
     
@@ -14,7 +14,7 @@ const Movies = ({ movies, loading, getMovie }) => {
             ))}
           </div>
         );
-      }
-}
+      };
+};
 
-export default Movies
+export default Movies;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const MovieItem = ({ movie, getMovie  }) => {
@@ -18,7 +18,7 @@ const MovieItem = ({ movie, getMovie  }) => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default MovieItem
+export default MovieItem;
