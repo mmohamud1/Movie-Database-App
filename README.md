@@ -1,4 +1,4 @@
-This project was created using React, React Router and React Hooks. It is a fully responsive and fully functional application which you can search for any movie and tv show and you can recieve information such as plot, rating, actors and many more. All the information i recieved is from http://www.omdbapi.com/
+This project was created using React, React Router and React Hooks. It is a fully responsive and fully functional application which you can search for any movie and tv show and you can receive information such as plot, rating, actors and many more. All the information i received is from http://www.omdbapi.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
