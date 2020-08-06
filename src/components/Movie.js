@@ -10,24 +10,24 @@ const Movie = ({ movieInfo, loading }) => {
             <Link to='/' className='btn btn-success'>
                 &larr; Search
             </Link>
-            <h1 className="text-center x-large">{movieInfo.Title}</h1>
+            <h1 className="text-center x-large font">{movieInfo.Title}</h1>
             <div className="grid-2 bg-container">
                 <div className="all-center">
                     <img src={movieInfo.Poster} className="all-center mb-1" alt="poster" style={{ width: '250px' }} />
-                    <p className="mb-1 badge badge-primary">Released: {movieInfo.Released}</p>
-                    <p className="mb-1 badge badge-primary">Rated: {movieInfo.Rated}</p>
-                    <p className="mb-1 badge badge-primary">Runtime: {movieInfo.Runtime}</p>
-                    <p className="mb-1 badge badge-primary">Rating: {movieInfo.imdbRating}/10</p>
+                    <p className="mb-1 badge badge-primary font">Released: {movieInfo.Released}</p>
+                    <p className="mb-1 badge badge-primary font">Rated: {movieInfo.Rated}</p>
+                    <p className="mb-1 badge badge-primary font">Runtime: {movieInfo.Runtime}</p>
+                    <p className="mb-1 badge badge-primary font">Rating: {movieInfo.imdbRating}/10</p>
                 </div>
                 <div>
-                    <h1 className="text-center mb-1 underline">Description</h1>
-                    <p className="large">{movieInfo.Plot}</p>
-                    <p className="medium mt-2 mb-1"><strong>Director:</strong> {movieInfo.Director}</p>
-                    <p className="medium mb-1"><strong>Starring:</strong> {movieInfo.Actors}</p>
-                    <p className="medium mb-1"><strong>Production:</strong> {movieInfo.Production}</p>
-                    <p className="medium mb-1"><strong>Genre:</strong> {movieInfo.Genre}</p>
-                    <p className="medium mb-1"><strong>Language:</strong> {movieInfo.Language}</p>
-                    <p className="medium mb-1"><strong>Box Office:</strong> {movieInfo.BoxOffice}</p>
+                    <h1 className="text-center mb-1 underline font">Description</h1>
+                    <p className="large font">{movieInfo.Plot}</p>
+                    <p className="medium mt-2 mb-1 font"><strong>Director:</strong> {movieInfo.Director}</p>
+                    <p className="medium mb-1 font"><strong>Starring:</strong> {movieInfo.Actors}</p>
+                    <p className="medium mb-1 font"><strong>Production:</strong> {movieInfo.Production}</p>
+                    <p className="medium mb-1 font"><strong>Genre:</strong> {movieInfo.Genre}</p>
+                    <p className="medium mb-1 font"><strong>Language:</strong> {movieInfo.Language}</p>
+                    <p className="medium mb-1 font"><strong>Box Office:</strong> {movieInfo.BoxOffice}</p>
                 </div>
             </div>
         </div>
