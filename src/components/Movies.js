@@ -10,7 +10,7 @@ const Movies = ({ movies, loading, getMovie }) => {
         return (
           <div className="grid-3 my-3">
             {movies.map(movie => (
-              <MovieItem key={movie.imdbID} movie={movie} getMovie={getMovie} />
+              <MovieItem key={movie.id} movie={movie} getMovie={getMovie}/>
             ))}
           </div>
         );

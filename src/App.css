@@ -93,6 +93,10 @@ img {
     text-decoration: underline;
 }
 
+.py-1 {
+    padding: 1rem 0;
+}
+
 .py-3 {
     padding: 3rem 0;
 }
@@ -305,7 +309,7 @@ button:focus {
 }
 
 .navbar-title {
-    margin-left: 60px;
+    margin-left: 45px;
 }
 
 .navbar-img {
@@ -410,5 +414,9 @@ button:focus {
     .navbar ul {
       text-align: center;
       justify-content: center;
+    }
+    
+    .navbar img {
+        display: none;
     }
 }
