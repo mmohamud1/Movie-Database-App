@@ -105,6 +105,7 @@ img {
     margin: 1rem 0;
 }
 
+
 .my-3 {
     margin: 3rem 0;
 }
@@ -115,6 +116,10 @@ img {
 
 .mb-1 {
     margin-bottom: 1rem;
+}
+
+.mt-1 {
+    margin-top: 1.5rem;
 }
 
 .mt-2 {
@@ -235,10 +240,6 @@ img {
 .badge-light {
     border: #ccc solid 1px;
 }
-  
-.round-img {
-    border-radius: 50%;
-}
 
 .round-corner-img {
     border-radius: 25px;
@@ -280,10 +281,11 @@ button:focus {
 }
 
 .navbar {
+    background-image: linear-gradient(to left, #00c6fb 0%, #0047ab 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.7rem 2rem;
+    padding: 0.2rem 2rem;
     z-index: 1;
     width: 100%;
     opacity: 0.9;
@@ -298,10 +300,17 @@ button:focus {
     color: #fff;
     padding: 0.45rem;
     margin: 0 0.25rem;
+    align-self: center;
+    justify-self: center;
+    font-size: 1rem;
 }
   
 .navbar a:hover {
     color: var(--light-color);
+}
+
+.navbar li {
+    padding-top: 0.5rem;
 }
   
 .navbar .welcome span {
@@ -310,6 +319,7 @@ button:focus {
 
 .navbar-title {
     margin-left: 45px;
+    font-size: 1.5rem;
 }
 
 .navbar-img {
@@ -376,7 +386,24 @@ button:focus {
     padding: 1rem;
     border: #ccc 1px dotted;
     margin: 0.7rem 0;
-  }
+    position: relative;
+}
+
+.pagination {
+    margin: 2rem 27rem;
+}
+
+.page-item {
+    margin: 0 0.5rem;
+}
+
+.cast-img { 
+    width: 150px;
+    height: 150px;
+    border: 1px #2b2b2b solid;
+    border-radius: 50%;
+    margin: 1rem 1.2rem;
+}
 
 @media (max-width: 700px) {
     .hide-sm {
@@ -410,10 +437,18 @@ button:focus {
       display: block;
       text-align: center;
     }
+
+    .pagination {
+        margin: 2rem 0;
+    }
   
     .navbar ul {
       text-align: center;
       justify-content: center;
+    }
+
+    .navbar-title {
+        margin: 0rem 0rem ;
     }
     
     .navbar img {

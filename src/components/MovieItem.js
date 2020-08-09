@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const MovieItem = ({ movie, getMovie }) => {
     const moreInfo = () => getMovie(movie.id);
     const posterSrc = `http://image.tmdb.org/t/p/w185${movie.poster_path}`
