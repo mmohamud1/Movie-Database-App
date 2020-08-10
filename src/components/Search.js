@@ -23,7 +23,7 @@ const Search = ({ searchMovies, clearSearch, movies }) => {
             </form>
             {movies.length > 0 && (
               <button className='btn btn-danger btn-block' onClick={clearSearch}>
-                Cear
+                Clear
               </button>
             )}
         </div>
