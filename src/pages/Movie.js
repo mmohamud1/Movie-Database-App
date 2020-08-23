@@ -22,7 +22,7 @@ const Movie = ({ movieInfo, loading, getCast, cast }) => {
             <Link to='/' className='btn btn-success'>
                 &larr; Search
             </Link>
-            <h1 className="text-center x-large font py-1">{movieInfo.original_title}</h1>
+            <h1 className="text-center x-large font py-1 bold">{movieInfo.original_title}</h1>
             <div className="grid-2 bg-container">
                 <div >
                     <img src={posterSrc} className="all-center mb-1" alt="poster" style={{ width: '250px' }} />
@@ -42,7 +42,7 @@ const Movie = ({ movieInfo, loading, getCast, cast }) => {
             </div>
             <div className="bg-container">           
                 {castMembers.map(member =>(
-                    <img key={member.cast_id} className="round-img cast-img" src={`http://image.tmdb.org/t/p/w185${member.profile_path}`} alt="cast-member"  />   
+                    <img key={member.cast_id} className="round-corner-img cast-img" src={`http://image.tmdb.org/t/p/w185${member.profile_path}`} alt="cast-member"  />   
                 ))}
             </div>
         </div>
