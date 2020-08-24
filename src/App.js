@@ -68,6 +68,11 @@ const App = () => {
       alert('No cast information available')
     }
   }
+
+  // format number as money
+  const formatMoney = (number) => {
+    return '$' + number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+  }
   
   return (
     <Router>
@@ -77,7 +82,7 @@ const App = () => {
           <Switch>
             <Route exact path='/' render={(props) => <Home searchMovies={searchMovies} movies={movies} currentMovies={currentMovies} loading={loading} paginate={paginate} moviesPerPage={moviesPerPage} clearSearch={clearSearch} getMovie={getMovie} />} />
             <Route exact path='/about' component={About} />
-            <Route exact path='/movie/:id' render={(props) => <Movie  movieInfo={movieInfo} loading={loading} cast={cast} getCast={getCast} />} />
+            <Route exact path='/movie/:id' render={(props) => <Movie  movieInfo={movieInfo} loading={loading} cast={cast} getCast={getCast} formatMoney={formatMoney} />} />
           </Switch>       
         </div>
       </div>

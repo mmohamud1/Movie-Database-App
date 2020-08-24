@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import Spinner from '../components/Spinner';
 
 
-const Movie = ({ movieInfo, loading, getCast, cast }) => {
+const Movie = ({ movieInfo, loading, getCast, cast, formatMoney }) => {
     const posterSrc = `http://image.tmdb.org/t/p/w342${movieInfo.poster_path}`
 
     // reduce the amount of cast memebers 
@@ -14,8 +14,7 @@ const Movie = ({ movieInfo, loading, getCast, cast }) => {
         getCast(id)
          // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
-
-
+    
     if (loading) return <Spinner />;
     return (
         <div>
@@ -36,8 +35,8 @@ const Movie = ({ movieInfo, loading, getCast, cast }) => {
                 <div className="all-center">
                     <p className="large font ">{movieInfo.overview}</p>
                     <p className="medium mb-1 mt-1 font"><strong>Produced By:</strong> {movieInfo.production_companies[0].name}</p>
-                    <p className="medium mb-1 font"><strong>Budget:</strong> ${movieInfo.budget}</p>  
-                    <p className="medium mb-1 font"><strong>Revenue:</strong> ${movieInfo.revenue}</p>  
+                    <p className="medium mb-1 font"><strong>Budget:</strong> {formatMoney(movieInfo.budget)}</p>  
+                    <p className="medium mb-1 font"><strong>Revenue:</strong> {formatMoney(movieInfo.revenue)}</p>  
                 </div>
             </div>
             <div className="bg-container">           
