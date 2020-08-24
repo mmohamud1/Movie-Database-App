@@ -69,7 +69,7 @@ const App = () => {
     }
   }
 
-  // format number as money
+  // format money
   const formatMoney = (number) => {
     return '$' + number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
   }
