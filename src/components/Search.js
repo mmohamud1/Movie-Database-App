@@ -16,7 +16,7 @@ const Search = ({ searchMovies, clearSearch, movies }) => {
     const onChange = e => setText(e.target.value);
 
     return (
-        <div>
+        <div >
             <form onSubmit={onSubmit} className="form">
                 <input  type="text" name="text" placeholder="  Search Movies..." value={text} onChange={onChange}/>
                 <input type="submit" value="search" className="btn btn-dark btn-block"/>
