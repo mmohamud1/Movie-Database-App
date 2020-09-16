@@ -13,7 +13,7 @@ const MovieItem = ({ movie, getMovie }) => {
             <div className="card round-corner-img">
                 <div className="card-inner round-corner-img">
                     <div className="card-front round-corner-img">
-                        <img className="round-corner-img" src={Logo} alt="Movie img unavailable"/>
+                        <img className="round-corner-img generic" src={Logo} alt="Movie img unavailable"/>
                     </div>
                     <div className="card-back round-corner-img">
                         <h1>{movie.title} ({releaseYear[0]})</h1>

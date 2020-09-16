@@ -20,7 +20,7 @@ const Search = ({ searchMovies, clearSearch, movies, setCurrentPage }) => {
         <div >
             <form onSubmit={onSubmit} className="form">
                 <input  type="text" name="text" placeholder="  Search Movies..." value={text} onChange={onChange}/>
-                <input type="submit" value="search" className="btn btn-dark btn-block"/>
+                <input type="submit" value="Search" className="btn btn-dark btn-block"/>
             </form>
             {movies.length > 0 && (
               <button className='btn btn-danger btn-block' onClick={clearSearch}>

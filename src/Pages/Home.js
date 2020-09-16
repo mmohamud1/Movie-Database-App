@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Search from '../components/Search';
 import Movies from '../components/Movies';
-import Pagination from '../components/Pagination'
+import Pagination from '../components/Pagination';
 
 const Home = ({ searchMovies, clearSearch, movies, paginate, moviesPerPage, loading, getMovie, currentMovies, setCurrentPage }) => (
     <Fragment>

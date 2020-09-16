@@ -4,7 +4,7 @@ import Spinner from '../components/Spinner';
 
 
 const Movie = ({ movieInfo, loading, getCast, cast, formatMoney }) => {
-    const posterSrc = `http://image.tmdb.org/t/p/w342${movieInfo.poster_path}`
+    const posterSrc = `http://image.tmdb.org/t/p/w342${movieInfo.poster_path}`;
 
     // reduce the amount of cast memebers 
     const castMembers = cast.slice(0,5);
@@ -13,7 +13,7 @@ const Movie = ({ movieInfo, loading, getCast, cast, formatMoney }) => {
     useEffect(() => {
         getCast(id)
          // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    }, []);
     
     if (loading) return <Spinner />;
     return (
@@ -21,22 +21,22 @@ const Movie = ({ movieInfo, loading, getCast, cast, formatMoney }) => {
             <Link to='/' className='btn btn-success'>
                 &larr; Search
             </Link>
-            <h1 className="text-center x-large font py-1 bold">{movieInfo.original_title}</h1>
+            <h1 className="text-center x-large py-1 bold">{movieInfo.original_title}</h1>
             <div className="grid-2 bg-container">
                 <div >
                     <img src={posterSrc} className="all-center mb-1" alt="poster" style={{ width: '250px' }} />
                     <div className="all-center">
-                        <p className="mb-1 badge badge-primary font">Released: {movieInfo.release_date}</p>
-                        <p className="mb-1 badge badge-primary font">Runtime: {movieInfo.runtime}m</p>
-                        <p className="mb-1 badge badge-primary font">Rating: {movieInfo.vote_average}/10</p>
-                        <p className="mb-1 badge badge-primary font">Language: {movieInfo.spoken_languages[0].name}</p>
+                        <p className="mb-1 badge badge-primary">Released: {movieInfo.release_date}</p>
+                        <p className="mb-1 badge badge-primary">Runtime: {movieInfo.runtime}m</p>
+                        <p className="mb-1 badge badge-primary">Rating: {movieInfo.vote_average}/10</p>
+                        <p className="mb-1 badge badge-primary">Language: {movieInfo.spoken_languages[0].name}</p>
                     </div>
                 </div>
                 <div className="all-center">
-                    <p className="large font ">{movieInfo.overview}</p>
-                    <p className="medium mb-1 mt-1 font"><strong>Produced By:</strong> {movieInfo.production_companies[0].name}</p>
-                    <p className="medium mb-1 font"><strong>Budget:</strong> {formatMoney(movieInfo.budget)}</p>  
-                    <p className="medium mb-1 font"><strong>Revenue:</strong> {formatMoney(movieInfo.revenue)}</p>  
+                    <p className="large ">{movieInfo.overview}</p>
+                    <p className="medium mb-1 mt-1"><strong>Produced By:</strong> {movieInfo.production_companies[0].name}</p>
+                    <p className="medium mb-1"><strong>Budget:</strong> {formatMoney(movieInfo.budget)}</p>  
+                    <p className="medium mb-1"><strong>Revenue:</strong> {formatMoney(movieInfo.revenue)}</p>  
                 </div>
             </div>
             <div className="bg-container">           

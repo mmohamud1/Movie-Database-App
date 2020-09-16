@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif !important;
     font-size: 1rem;
     line-height: 1.6;
     background-color: #f6f6f6;
@@ -72,10 +72,6 @@ img {
     font-weight: 700;
 }
 
-.font {
-    font-family: 'Nunito', sans-serif !important;
-}
-
 .text-center {
     text-align: center;
 }
@@ -122,6 +118,7 @@ img {
 .mb-1 {
     margin-bottom: 1rem;
 }
+
 
 .mt-1 {
     margin-top: 1.5rem;
@@ -366,6 +363,10 @@ button:focus {
   
 .card:hover .card-inner {
     transform: rotateY(180deg);
+}
+
+.generic {
+    background-image: linear-gradient(to left, #00c6fb 0%, #0047ab 100%);
 }
   
 .card-front,

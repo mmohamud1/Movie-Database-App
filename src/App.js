@@ -28,16 +28,16 @@ const App = () => {
     } catch (err) {
       alert('Movie is unavailable');
     } 
-  }
+  };
 
-  // CLear Search
+  // Clear Search
   const clearSearch = () => {
     setMovies([]);
     setLoading(false);
     setCurrentPage(1)
   };
 
-  // Get current Movie
+  // Get current movies for pagination
   const indexOfLastMovie = currentPage * moviesPerPage;
   const indexOfFirstMovie = indexOfLastMovie - moviesPerPage;
   const currentMovies = movies.slice(indexOfFirstMovie, indexOfLastMovie)
@@ -68,12 +68,12 @@ const App = () => {
     } catch (err) {
       alert('No cast information available')
     }
-  }
+  };
 
-  // format money
+  // Format money
   const formatMoney = (number) => {
     return '$' + number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
-  }
+  };
   
   return (
     <Router>
