@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../img/kisspng-cinema-film-movie-theatre-5ac068632302c2.1016541515225590751434.png'
+import Logo from '../img/kisspng-cinema-film-movie-theatre-5ac068632302c2.1016541515225590751434.png';
 
 
 const MovieItem = ({ movie, getMovie }) => {
