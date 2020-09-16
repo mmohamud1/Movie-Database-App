@@ -22,7 +22,7 @@ const App = () => {
     try {
       setLoading(true)
       const res = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${input}&page=1&include_adult=false`)
-      console.log(res.data.results);
+      //console.log(res.data.results);
       setMovies(res.data.results);
       setLoading(false);
     } catch (err) {
@@ -34,6 +34,7 @@ const App = () => {
   const clearSearch = () => {
     setMovies([]);
     setLoading(false);
+    setCurrentPage(1)
   };
 
   // Get current Movie
@@ -80,7 +81,7 @@ const App = () => {
         <Navbar />
         <div className="container">
           <Switch>
-            <Route exact path='/' render={(props) => <Home searchMovies={searchMovies} movies={movies} currentMovies={currentMovies} loading={loading} paginate={paginate} moviesPerPage={moviesPerPage} clearSearch={clearSearch} getMovie={getMovie} />} />
+            <Route exact path='/' render={(props) => <Home searchMovies={searchMovies} movies={movies} currentMovies={currentMovies} loading={loading} paginate={paginate} moviesPerPage={moviesPerPage} clearSearch={clearSearch} getMovie={getMovie} setCurrentPage={setCurrentPage}/>} />
             <Route exact path='/about' component={About} />
             <Route exact path='/movie/:id' render={(props) => <Movie  movieInfo={movieInfo} loading={loading} cast={cast} getCast={getCast} formatMoney={formatMoney} />} />
           </Switch>       

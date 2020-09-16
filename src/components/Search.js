@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Search = ({ searchMovies, clearSearch, movies }) => {
+const Search = ({ searchMovies, clearSearch, movies, setCurrentPage }) => {
     const [text, setText] = useState('');
 
     const onSubmit = e => {
@@ -10,6 +10,7 @@ const Search = ({ searchMovies, clearSearch, movies }) => {
         } else {
           searchMovies(text);
           setText('');
+          setCurrentPage(1)
         }
       };
 
