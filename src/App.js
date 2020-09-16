@@ -22,7 +22,7 @@ const App = () => {
     try {
       setLoading(true)
       const res = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${input}&page=1&include_adult=false`)
-      //console.log(res.data.results);
+      console.log(res.data.results);
       setMovies(res.data.results);
       setLoading(false);
     } catch (err) {
